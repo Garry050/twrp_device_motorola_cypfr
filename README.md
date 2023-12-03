@@ -1,4 +1,24 @@
-# TWRP Device Tree for Motorola G71 5G (corfur).
+# TWRP Device Tree for Motorola G52 5G (cypfr).
+
+## Based on Motorola G71 5G (corfur) device Tree
+Thank you Venkat3620.
+
+* Works
+ * Decryption on Stock ROM (S3RYBS32.168-19-5-11)
+ * SDCard
+ * Backup
+ * Flash boot.img
+ * Vibration
+ * ILITEK Touchscreen
+* Broken
+ * Battery Info
+ * USB things
+ 	* like MTP, adb, sideload, OTG. everything broken
+* Not tested
+ * Restore
+ * Install zip packages
+ * Install system images
+ * Wipe
 
 ## Setup repo tool
 Setup repo tool from here https://source.android.com/setup/develop#installing-repo
@@ -18,10 +38,10 @@ and then paste the following
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote name="github"
-	fetch="https://github.com/" />
+	fetch="https://github.com" />
 
 <project path="device/motorola/corfur"
-	name="moto-corfur/twrp_device_motorola_corfur"
+	name="Garry050/twrp_device_motorola_cypfr"
 	remote="github"
 	revision="android-12.1" />
 </manifest>
@@ -37,14 +57,14 @@ repo sync -j$(nproc --all)
 To build, execute this command:
 
 ```
-. build/envsetup.sh; lunch twrp_corfur-eng; make bootimage
+. build/envsetup.sh; lunch twrp_cypfr-eng; make bootimage
 ```
 
 To test it:
 
 ```
 # To temporarily boot it
-fastboot boot out/target/product/corfur/boot.img 
+fastboot boot out/target/product/cypfr/boot.img
 
 # To make twrp replace stock recovery temporarily boot twrp and navigate
 to advanced menu and select Flash Current TWRP option.
