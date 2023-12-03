@@ -4,21 +4,21 @@
 Thank you Venkat3620.
 
 * Works
- * Decryption on Stock ROM (S3RYBS32.168-19-5-11)
- * SDCard
- * Backup
- * Flash boot.img
- * Vibration
- * ILITEK Touchscreen
+  * Decryption on Stock ROM (S3RYBS32.168-19-5-11)
+  * SDCard
+  * Backup
+  * Flash boot.img
+  * Vibration
+  * ILITEK Touchscreen
 * Broken
- * Battery Info
- * USB things
- 	* like MTP, adb, sideload, OTG. everything broken
+  * Battery Info
+  * USB things
+    * like MTP, adb, sideload, OTG. everything broken
 * Not tested
- * Restore
- * Install zip packages
- * Install system images
- * Wipe
+  * Restore
+  * Install zip packages
+  * Install system images
+  * Wipe
 
 ## Setup repo tool
 Setup repo tool from here https://source.android.com/setup/develop#installing-repo
